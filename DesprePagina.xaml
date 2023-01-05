@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Olaeriu_Todean.DesprePagina"
+             Title=" ">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="barbat.png"
+                   SemanticProperties.Description="Investigațiile din acest an"
+                   HeightRequest="300" />
+
+        </HorizontalStackLayout>
+        <Label Text="Contact"  FontSize="32" FontFamily="Comic Sans MS" />
+        <Label Text="Call Center: 021 9268 (apel taxabil la tarif normal din orice rețea); 021 30.10.770" FontSize="20" FontFamily="ComicSansMS"/>
+        <Label Text="Program Call Center: Luni-Vineri 7:30-21:00; Sâmbătă și Duminică: 8:00-20:00" FontSize="20" FontFamily="ComicSansMS"/>
+
+    </VerticalStackLayout>
+</ContentPage>
