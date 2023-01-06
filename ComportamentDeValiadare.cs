@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Olaeriu_Todean
+﻿namespace Olaeriu_Todean
 {
     class ComportamentDeValidare : Behavior<Editor>
     {
