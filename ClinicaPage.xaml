@@ -29,11 +29,12 @@
                          Text="Ștergeți Clinica" Grid.Column="1"
                         MaximumWidthRequest="200"
                         Clicked="OnDeleteButtonClicked" />
-                <Button  BackgroundColor="DarkRed"
-                         Text="Arată pe hartă" Grid.Column="0" Grid.Row="1"
+                
+            </Grid>
+            <Button  BackgroundColor="DarkRed"
+                         Text="Arată pe hartă" 
                         MaximumWidthRequest="200"
                         Clicked="OnArataHartaButtonClicked"></Button>
-            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

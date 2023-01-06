@@ -23,6 +23,20 @@ public partial class ServiciuPage : ContentPage
         await App.Database.DeleteServiciuAsync(serviciu);
         listView.ItemsSource = await App.Database.GetServiciiAsync();
     }
+    async void OnDeleteItemButtonClicked(object sender, EventArgs e)
+    {
+        Serviciu serviciu;
+        var serv = (Serviciu)BindingContext;
+        if (listView.SelectedItem != null)
+        {
+            serviciu = listView.SelectedItem as Serviciu;
+            var listaToateServiciile = await App.Database.GetServiciiAsync();
+            var listaServiciu = listaToateServiciile.FindAll(x => x.ID == serviciu.ID);
+            await App.Database.DeleteServiciuAsync(listaServiciu.FirstOrDefault());
+            await Navigation.PopAsync();
+        }
+    }
+
     protected override async void OnAppearing()
     {
         base.OnAppearing();
